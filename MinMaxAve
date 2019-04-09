@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int userInput = 0;
+    int minimum = 100;
+    int max = 0;
+    float average = 0;
+    float sum = 0;
+    
+    for(int i = 0; i < 15; i++){
+       
+        cin >> userInput;
+        
+        if(userInput < minimum){
+            minimum = userInput;
+        }
+       if(userInput > max){
+        max = userInput;
+       }
+    sum += userInput;
+    } 
+    average = sum / 15.0;
+    cout << "minimum number is: " << minimum << " maximum number is: " << max << " Average is: " << average;
+}
